@@ -433,8 +433,11 @@ function createDodecahedron(gl, translation, rotationAxis1, rotationAxis2) {
     -(1 / goldenRatio), -goldenRatio, 0, // Index : 54
 
     // Side 12
-
-
+    -1.0, -1.0, -1.0, // Index : 55
+    0, -(1 / goldenRatio), -goldenRatio, // Index : 56
+    1.0, -1.0, -1.0, // Index : 57
+    (1 / goldenRatio), -goldenRatio, 0, // Index : 47
+    -(1 / goldenRatio), -goldenRatio, 0, // Index : 48
   ];
 
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(verts), gl.STATIC_DRAW);
